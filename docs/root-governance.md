@@ -6,10 +6,11 @@ Dokumen ini memuat aturan tingkat root untuk monorepo **Rust WASM UI Lab**.
 
 Aturan hanya berlaku **di level folder tempat aturan itu berada** dan **tidak mengatur isi yang lebih dalam**.
 
-- **Root**: hanya mengatur isi di root.
-- **Rak**: aturan hanya berlaku untuk isi di rak tersebut.
-- **Sub-Rack (SR)**: kontainer utama untuk Buku.
-- **Buku**: aturan hanya berlaku untuk isi di buku tersebut.
+- **Rak (R)**: Unit terbesar berdasarkan domain pengetahuan.
+- **Sub-Rak (SR)**: Pengelompokan topik di dalam Rak.
+- **Buku (BK)**: Kontainer utama untuk materi spesifik.
+- **Chapter (CH)**: Bab pembahasan di dalam Buku.
+- **Section (SC)**: Sub-bab atau bagian detail di dalam Chapter.
 
 ## Struktur Root
 
@@ -21,9 +22,10 @@ Aturan hanya berlaku **di level folder tempat aturan itu berada** dan **tidak me
 ## Konvensi Penomoran
 
 - **Rak**: `RAK-01`, `RAK-02`, ...
-- **Sub-Rack**: `SR-01`, `SR-02`, ...
+- **Sub-Rak**: `SR-01`, `SR-02`, ...
 - **Buku**: `BK-01`, `BK-02`, ...
-- **Bab**: `CH-01`, `CH-02`, ...
+- **Chapter**: `CH-01`, `CH-02`, ...
+- **Section**: `SC-01`, `SC-02`, ...
 
 ## Ruang Lingkup Root
 
